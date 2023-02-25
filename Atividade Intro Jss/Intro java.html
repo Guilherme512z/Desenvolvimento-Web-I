@@ -1,0 +1,120 @@
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="Guilherme e Elisangela" content="Intro Java Scritp">
+  <title>Intro Java Scritp</title>
+  <link rel="stylesheet" href="Intro java.Css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+  <h1>ESCOLHA SUA COR!</h1>
+
+
+    <div class="box" style="background-color: red;"></div> 
+    <div class="box" style="background-color: yellow;"></div> 
+    <div class="box" style="background-color: green;"></div> 
+    <div class="box" style="background-color: white;"></div> <br>
+
+
+  <h1>BOTÃO PARA PARAGRAFOS!</h1><br><br>
+
+  <input type="text" name="t" id="t"/>
+  <input type="button" 
+               value="Adicionar parágrafo" id="btAdd" />
+               <br><br>
+
+
+               <input type="button"
+               value="Remover todos os parágrafo" id="btRemover"/>  
+
+               <input type="button"
+               value="Remover somente o ultimo paragrafo" id="btRemoverUltimo"/><br><br>
+
+               <input type="button"
+               value="Aumentar o tamanho da fonte" id="btAumentarFonte"/>
+
+               <input type="button"
+               value="Diminuir o tamanho da fonte" id="btDiminuirFonte"/><br><br><br>
+
+
+
+
+
+<script>
+
+/*Cor de Fundo*/
+
+$(function () {
+            $(".box").on("click", function () {
+                var cor = $(this).css ("background-color");
+
+                $("body").css({
+                    "background-color": cor
+                });
+            
+        });
+
+        });
+
+
+/*Inserir paragrafo*/
+$(document).ready(function () {
+			$("#btAdd").click(function () {
+				$("button").add("<p>Guilherme e Elisangela</p>")
+					.appendTo(document.body);
+			});
+		});
+/*Aumentar fonte*/
+        $(document).ready(function(){
+        $("#btAumentarFonte").on("click", function() {
+            $("p").css({
+                "font-size": "+=4px"
+            });
+        });
+    });
+
+/*Diminuir fonte*/
+    $(document).ready(function(){
+        $("#btDiminuirFonte").on("click", function() {
+            $("p").css({
+                "font-size": "-=4px"
+            });
+        });
+    });
+
+/*Remover todos os paragrafos*/
+    $(document).ready(function () {
+        $("#btRemover").click(function () {
+          $("p").remove();
+        });
+      });
+
+/*Remover o ultimo paragrafo*/
+      $(document).ready(function () {
+        $("#btRemoverUltimo").click(function () {
+          $("p").last().remove();
+        });
+      });
+
+/*Destaque ao passar o mouse por cima*/
+      $("body").on("mousehover", "p", function (){
+        $(this).addClass("destaque");
+      });
+
+
+
+  
+
+</script>
+ 
+</body>
+</html>

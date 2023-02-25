@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <title>Meu formulário Página de Contato </title>
+    <meta charset = "UTF - 8">
+    <meta name="viewport" content="width = device-width, initial-scale =1,shrink - to - fit = no">
+    <meta name="author" content="Guilherme">
+    <meta name="description"content="Aprender HTML">
+    <meta name="Keywords" content="HTML, Web , cps ,fatec">
+
+</head>
+ <body>
+
+    <style>
+
+        body{
+            background-color: rgba(175, 151, 43, 0.349);
+        
+        }
+
+
+
+    </style>
+
+
+
+    <h1>Contato Conosco!</h1> 
+
+    <h3>Entre em contato, tire dúvidas e saiba mais informações sobre os produto da SCA. nosso atendimento está preparado para lhe antender de melhor forma possivel.</h3><br>
+
+    <form action="pagina.html" method="POST">
+
+        
+        <P><label for="nome" >Nome:</label>
+        <input type="text" name="nome" id="nome" 
+        placeholder="Seu Nome;"></P>
+        
+        <P><label for="idade" >Idade:</label>
+        <input type="number" name="idade" id="idade" min="0" max="160" step="1" placeholder="Idade;"></P>
+
+        <P><label for="cpf" >CPF:</label>
+        <input type="text" name="cpf" id="cpf" 
+        placeholder="999.999.999-99"></P>
+        
+        <P><label for="endereco" >Endereço:</label>
+        <input type="text" name="endereco" id="endereco" 
+        placeholder="Seu endereço;"></P>
+        
+        <p><label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+            <option value="SP" selected>São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SE">Sergipe</option> 
+            <option value="TO">Tocantins</option>
+
+        </select></p>
+
+        <P><label for="cidade" >Cidade:</label>
+        <input type="text" name="cidade" id="cidade" 
+        placeholder="Sua cidade;"></P>
+
+        <P><label for="email" >E-mail:</label>
+        <input type="email" name="email" id="email" 
+        placeholder="guizin@gmail.com"></P>
+        
+        <P><label for="telefone" >Telefone:</label>
+        <input type="tel" name="telefone" id="telefone" 
+        placeholder="(xx) xxxxx-xxxx"></P>
+
+        <P><label for="telefone" >URL Site:</label>
+        <input type="url" name="site" id="site" 
+        placeholder="http://yourdomain.aa"></P>
+
+        <P><label for="data" >Data:</label>
+        <input id="data" name="data" type="date"></p>
+
+        <P><label for="mensagem" >Mensagem</label>
+        <textarea id="mensagem" name="mensagem"
+        rows="4" cols="30"></textarea><br><br>
+
+
+       
+        <p><input type="submit" value="Enviar">             <input type="reset" value="Limpar"> </p><br>
+
+        <p><b>Click Aqui:
+            <a href="http://127.0.0.1:5500/Atividades/Atividade2%20Links%20e%20viagens.html#1" Target="_black">Voltar ao Início;</a> </p></b>
+
+
+    </form>
+
+ </body>
+</html>
